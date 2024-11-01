@@ -11,4 +11,4 @@ let gameCounter = 100;
 
 // console.log(gameCounter);
 
-console.table([gameCounter++, ++gameCounter, ++gameCounter, ++gameCounter]);
+console.table([gameCounter++, ++gameCounter, ++gameCounter, ++gameCounter]); // increment/ decrement
