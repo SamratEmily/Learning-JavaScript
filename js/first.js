@@ -4,7 +4,7 @@ console.log("Hello Sunshine! 🌞");
 const lightButton = document.getElementsByClassName("button-for-light")[0];
 lightButton.addEventListener("click", function () {
     document.body.style.backgroundColor = 
-        document.body.style.backgroundColor === "pink" ? "white" : "pink";
+        document.body.style.backgroundColor === "pink" ? "antiquewhite" : "pink";
 });
 
 // Color Animation Button
