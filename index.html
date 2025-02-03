@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Javascript</title>
+    <title>Learning JavaScript</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .button-class {
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>I am Learning Javascript</h1>
-    <div class="button-class" style="display: inline;">
-        <button class="button-for-light">On/OFF</button>
+    <h1>I am Learning JavaScript</h1>
 
-        <button class="button-for-color">Animate the color</button>
-
+    <div class="button-class">
+        <button class="button-for-light">Toggle Light</button>
+        <button class="button-for-color">Animate Color</button>
+        <button class="toggle-text">Toggle Text</button>
+        <button class="show-message">Show Message</button>
+        <button class="add-item">Add List Item</button>
+        <button class="delete-item">Delete Last Item</button>
+        <button class="update-item">Update Last Item</button>
     </div>
 
-    <script>
-        const button = document.getElementsByClassName("button-for-light")[0];
+    <p class="message hidden">Hello! JavaScript is awesome. 🚀</p>
 
-        button.addEventListener("click", function() {
-            document.body.style.backgroundColor = 
-                document.body.style.backgroundColor === "pink" ? "white" : "pink";
-        });
-    </script>
+    <ul id="dynamic-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
     <script src="js/first.js"></script>
 </body>
 </html>
