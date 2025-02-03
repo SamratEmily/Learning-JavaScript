@@ -7,7 +7,12 @@
 </head>
 <body>
     <h1>I am Learning Javascript</h1>
-    <button class="button-for-light">On/OFF</button>
+    <div class="button-class" style="display: inline;">
+        <button class="button-for-light">On/OFF</button>
+
+        <button class="button-for-color">Animate the color</button>
+
+    </div>
 
     <script>
         const button = document.getElementsByClassName("button-for-light")[0];
@@ -17,5 +22,6 @@
                 document.body.style.backgroundColor === "pink" ? "white" : "pink";
         });
     </script>
+    <script src="js/first.js"></script>
 </body>
 </html>
